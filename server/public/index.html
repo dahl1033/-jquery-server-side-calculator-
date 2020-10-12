@@ -9,12 +9,41 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="number" id="userNum1">
-    <button id="plus">+</button>
-    <button id="minus">-</button>
-    <button id="multiply">*</button>
-    <button id="divide">/</button>
+    <div id="header">
+        <h1>Server Side Calculator</h1>
+    </div>
 
-    <input type="number" id="userNum1">
+    <div id="container">
+        <div id="inputFields">
+            <h3>Type in the Numbers</h3>
+            <div id="firstNumContainer">
+                <label>Number 1</label>
+                <input id="firstNumInput" type="number">
+            </div>
+            <div id="operatorContainer">
+                <button id="addBtn" class="opBtn">+</button>
+                <button id="subtractBtn" class="opBtn">-</button>
+                <button id="multiplyBtn" class="opBtn">*</button>
+                <button id="divideBtn" class="opBtn">/</button>
+            </div>
+            
+            <div id="secondNumContainer">                
+                <label>Number 2</label>
+                <input id="secondNumInput" type="number">
+            </div>
+            
+            <div id="buttonsContainer">
+                <button id="submitBtn">=</button>
+                <button id="clearBtn">C</button>
+                <button id="clearHistory">Clear History</button>  
+            </div>
+
+            <div id="resultDisplay"></div>
+
+            <div>
+                <ul id="historyList"></ul>
+            </div>
+            
+        </div>
 </body>
 </html>
