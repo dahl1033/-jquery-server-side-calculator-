@@ -9,41 +9,26 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="header">
-        <h1>Server Side Calculator</h1>
-    </div>
+<h1>Calculator</h1>
+  <div>
+    <input id="numInput1" type="number">
 
-    <div id="container">
-        <div id="inputFields">
-            <h3>Type in the Numbers</h3>
-            <div id="firstNumContainer">
-                <label>Number 1</label>
-                <input id="firstNumInput" type="number">
-            </div>
-            <div id="operatorContainer">
-                <button id="addBtn" class="opBtn">+</button>
-                <button id="subtractBtn" class="opBtn">-</button>
-                <button id="multiplyBtn" class="opBtn">*</button>
-                <button id="divideBtn" class="opBtn">/</button>
-            </div>
-            
-            <div id="secondNumContainer">                
-                <label>Number 2</label>
-                <input id="secondNumInput" type="number">
-            </div>
-            
-            <div id="buttonsContainer">
-                <button id="submitBtn">=</button>
-                <button id="clearBtn">C</button>
-                <button id="clearHistory">Clear History</button>  
-            </div>
+        <button class="operator">+</button>
+        <button class="operator">-</button>
+        <button class="operator">*</button>
+        <button class="operator">/</button>
 
-            <div id="resultDisplay"></div>
+    <input id="numInput2" type="number">
 
-            <div>
-                <ul id="historyList"></ul>
-            </div>
-            
-        </div>
+        <button id="submit">=</button>
+        <button id="clearInputs">C</button>
+  </div>
+  <main>
+      <div id="resultOutput"></div>
+      <div>
+        <ul id="history"></ul>
+      </div>
+      
+  </main>   
 </body>
 </html>
