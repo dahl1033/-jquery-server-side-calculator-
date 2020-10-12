@@ -19,7 +19,7 @@ function getOperator(){
 function clearInput() {
     $('#numInput1').val('');
     $('#numInput2').val('');
-}// end clearInput
+} // end clearInput
 
 // POST new calculation object to server and for calculation 
 function calculate(){
@@ -60,5 +60,7 @@ function calculate(){
                 // append new answer to resultsOutput
                 $('#resultOutput').append(`<p>Answer: ${response[0].answer}</p>`);
                 })
+            }).catch( function(err){
+                console.log(err);
             })
-}// end calculate
+} // end calculate
