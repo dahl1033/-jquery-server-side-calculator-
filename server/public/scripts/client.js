@@ -7,6 +7,7 @@ function onReady() {
     $('.operator').on('click', getOperator);
 } // end onReady
 
+// global variable for assigned operator
 let operator = '';
 
 // updates our global operator variable from user input on DOM

@@ -9,8 +9,9 @@ app.use(express.static('server/public'));
 
 app.use(bodyParser.urlencoded({extended:true}));
 
-let numberArray = [];
-
+// global variable for an array of calculation objects
+let numberArray = [];                           // if i would have put more time in I would've liked to move this into a module and grab my 
+                                                // calculation objects from there
 // GET route to send number array data
 app.get('/calculator', (req, res)=>{
     res.send(numberArray);
